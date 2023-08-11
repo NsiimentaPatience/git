@@ -1,0 +1,405 @@
+
+ .container{
+  padding:20px 20px;
+  background: black;
+ }
+  
+  #contact {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  
+   .direct-contact-container {
+     max-width: 400px
+  } 
+
+  .form-group{
+    margin-bottom: 45px;
+  }
+  .button {
+    border-style: outset;
+    border-color: #f68d2d;
+    color: #555;
+    padding: 10px 20px;
+    align-items: center;
+    margin-left: 80px;
+    text-decoration: none;
+
+  }
+  .button:hover{
+    color: #f68d2d;
+  }
+  .calendly-badge-widget {
+    display: none !important;
+  }
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #f68d2d;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color:#f68d2d;
+  }
+  
+  .social-media-list li {
+    /* position: relative;  */
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #706c6c; 
+  }
+  
+  /* .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  } */
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+ 
+    
+  /* Begin Media Queries*/
+  @media screen and (max-width: 850px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .direct-contact-container, .form-horizontal {
+      margin: 0 auto;
+    }  
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 569px) {
+  
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    .form-control, textarea {
+      
+      margin: 0 auto;
+    }
+   
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }  
+    .social-media-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 410px) {
+    .button {
+      width: 99%;
+    }
+  }
+.form-group{
+    color:silver;
+}
+.button{
+    border-style: outset;
+    border-color: #f68d2d;
+    color:white;
+    padding:10px 20px ;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 80px;
+
+}
+span{
+    color: #f68d2d;
+
+}
+h1{
+    color: white;
+}
+
+/* code for the button */
+/* Add some basic styling to the button */
+#homeButton {
+  background-color: black;
+  margin-left: 10%;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-style: outset;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: #f68d2d;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Style the button when the user hovers over it */
+#homeButton:hover {
+  background-color:#f68d2d;
+  color: black;
+}
+
+/* Style the button when it is active (clicked) */
+#homeButton:active {
+  background-color: black;
+}
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .direct-contact-container {
+    /* Adjust the layout for small screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-list {
+    /* Adjust the spacing between list items for better readability */
+    padding: 0;
+    margin: 10px 0;
+    list-style: none; /* Remove default list style */
+  }
+
+  .list-item {
+    /* Adjust the spacing between list items for better readability */
+    margin: 5px 0;
+    display: flex; /* Display icon and text on the same line */
+    align-items: center; /* Center the content vertically */
+  }
+
+  /* Style the icon */
+  .list-item i {
+    margin-right: 10px; /* Add some space between the icon and text */
+  }
+
+  /* Additional adjustment to the icon size on small screens */
+  .contact-list i,
+  .social-media-list i {
+    font-size: 1.5rem;
+  }
+  .social-media-list {
+    /* Adjust the spacing between social media icons for better readability */
+    padding: 0;
+    margin: 10px 0;
+    list-style: none; /* Remove default list style */
+    display: flex; /* Display icons on the same line */
+    justify-content: center; /* Center the icons horizontally */
+  }
+
+  .social-media-list li {
+    /* Adjust the spacing between social media icons for better readability */
+    margin: 0 5px; /* Add some space between the icons */
+  }
+}
+
+
+
+/* code for the icons */
+.contact-list {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.contact-text {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-text a {
+  margin-right: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+  position: relative;
+}
+
+.contact-text a {
+  color: white;
+  margin-right: 0px;
+  text-decoration: none;
+}
+.fa-envelope {
+  color: #f68d2d;
+  margin-right: 30px; 
+}
+
+.fa-phone {
+  color: #f68d2d;
+  margin-right: 30px;
+}
+.contact-list .list-item .contact-text .fas.fa-map-marker-alt {
+   margin-right: 30px; 
+   color: #f68d2d;
+}
+@media screen and (max-width: 600px) {
+  .direct-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-text a {
+    margin-right: 0;
+  }
+}
+
+
+/* Add the following styles to give a light gray background that glows brighter on hover */
+.fas {
+  border-radius: 50%;
+}
+
+
+ .fas:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+  box-shadow: 0 0 5px rgba(246, 141, 45, 0.7);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  filter: brightness(1.2);
+  border: 7px solid transparent;
+} 
+
